@@ -1,7 +1,7 @@
-grunt-init-static-website-small
+gulp-init-static-website-small
 ===============================
 
-静的 web サイト開発用 grunt スケルトン (デモ・ペラ1用)
+静的 web サイト開発用 gulp スケルトン (デモ・ペラ1用)
 
 インストール
 ------------
