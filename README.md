@@ -1,4 +1,4 @@
-gulp-init-static-website-small
+gulp-template-static-website-small
 ===============================
 
 静的 web サイト開発用 gulp スケルトン (デモ・ペラ1用)
