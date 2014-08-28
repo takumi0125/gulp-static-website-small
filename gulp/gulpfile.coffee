@@ -24,9 +24,7 @@ SRC_DIR = './src/'
 PUBLISH_DIR = '../htdocs/'
 BOWER_COMPONENTS = './bower_components/'
 
-
 DATA_JSON = SRC_DIR + 'data.json'
-SPRITE_IMGS_DIR = SRC_DIR + 'img/index_sprites/*'
 
 paths =
   dataJson: DATA_JSON
@@ -43,10 +41,11 @@ paths =
   coffee: SRC_DIR + '**/*.coffee'
   typescript: SRC_DIR + '**/*.ts'
   sprite:
-    index: SPRITE_IMGS_DIR
+    index: 'img/index_sprites/*'
 
   excludeSrcs: [
     SRC_DIR + '**/*'
+    '!' + DATA_JSON
     '!' + SRC_DIR + '**/_*/*'
     '!' + SRC_DIR + '**/_*/'
     '!' + SRC_DIR + '**/*sprites/*'
@@ -54,7 +53,6 @@ paths =
     '!' + SRC_DIR + '**/src/*'
     '!' + SRC_DIR + '**/src/'
     '!' + SRC_DIR + '**/*.json'
-    '!' + DATA_JSON
     '!' + SRC_DIR + '**/*.jade'
     '!' + SRC_DIR + '**/*.sass'
     '!' + SRC_DIR + '**/*.scss'
