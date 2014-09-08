@@ -45,6 +45,7 @@ paths =
 
   excludeSrcs: [
     SRC_DIR + '**/*'
+    SRC_DIR + '.htaccess'
     '!' + DATA_JSON
     '!' + SRC_DIR + '**/_*/*'
     '!' + SRC_DIR + '**/_*/'
