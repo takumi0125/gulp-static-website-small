@@ -110,12 +110,13 @@ gulp.task 'stylus', ->
 
 # spriteIndex
 gulp.task 'spriteIndex', ->
-  spriteData = gulp.src paths.sprite.index
+  spriteData = gulp.src SRC_DIR + paths.sprite.index
   .pipe plumber errorHandler: errorHandler 'spriteIndex'
   .pipe sprite(
     imgName: 'index_sprites.png'
     cssName: '_index_sprites.scss'
     padding: 1
+    algorithm: 'binary-tree'
     imgPath: '../' + paths.sprite.index
   )
   
@@ -172,7 +173,8 @@ gulp.task 'jade', ->
   gulp.src paths.jade
   .pipe data -> require SRC_DIR + 'data.json'
   .pipe plumber errorHandler: errorHandler 'jade'
-  .pipe jade()
+  .pipe jade
+    pretty: true
   .pipe gulp.dest PUBLISH_DIR
 
 
