@@ -117,7 +117,7 @@ gulp.task 'spriteIndex', ->
     cssName: '_index_sprites.scss'
     padding: 1
     algorithm: 'binary-tree'
-    imgPath: '../' + paths.sprite.index
+    imgPath: '../img/index_sprites.png'
   )
   
   spriteData.img
