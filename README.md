@@ -7,7 +7,7 @@ gulp-static-website-small
 ```bash
 mkdir yourProject/
 cd yourProject
-git clone git@github.com:takumi0125/gulp-static-website-small.git
+git clone git@github.com:takumi0125/gulp-static-website-small.git .
 cd gulp
 npm install
 ```
