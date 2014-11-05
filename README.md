@@ -5,6 +5,10 @@ gulp-static-website-small
 
 ## インストール
 ```bash
+npm install -g bower gulp
+```
+gulp, bower がインストールされていなければインストール。
+```bash
 mkdir yourProject
 cd yourProject
 git clone git@github.com:takumi0125/gulp-static-website-small.git .
