@@ -8,6 +8,7 @@ gulp-static-website-small
 mkdir yourProject
 cd yourProject
 git clone git@github.com:takumi0125/gulp-static-website-small.git .
+git submodule update --init
 cd gulp
 npm install
 ```
@@ -19,5 +20,11 @@ npm install
 基本構造は
 <a href="https://github.com/takumi0125/static-website-basic-small-src" target="_blank">takumi0125/static-website-basic-small-src</a>
 を使用しています。
+
+```bash
+git submodule update --init
+```
+
+で上記サブモジュールの初期化を行っています。
 
 bowerでインストールされる JS ライブラリは、 `js/lib/` に配置されます。
