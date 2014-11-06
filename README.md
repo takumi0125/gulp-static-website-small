@@ -11,8 +11,7 @@ gulp, bower がインストールされていなければインストール。
 ```bash
 mkdir yourProject
 cd yourProject
-git clone git@github.com:takumi0125/gulp-static-website-small.git .
-git submodule update --init
+git clone --recursive https://github.com/takumi0125/gulp-static-website-small.git .
 cd gulp
 npm install
 ```
@@ -23,7 +22,7 @@ npm install
 
 基本構造は
 <a href="https://github.com/takumi0125/static-website-basic-small-src" target="_blank">takumi0125/static-website-basic-small-src</a>
-を使用しています。
+を `src` 以下でサブモジュールとして使用しています。
 
 ```bash
 git submodule update --init
